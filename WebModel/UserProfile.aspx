@@ -15,9 +15,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
      <%--表格显示区--%>
-    <table id="tt" title="管理员设置" class="easyui-datagrid" style="width: 1024px; height: 400px;"        
+    <table id="tt" class="easyui-datagrid"  fit="true"
         idfield="itemid" pagination="true" data-options="iconCls:'icon-save',rownumbers:true,url:'SetAdmin.ashx/ProcessRequest',pageSize:5, pageList:[5,10,15,20],method:'get',toolbar:'#tb',striped:true" fitcolumns="true"> <%--striped="true"--%>
         <%-- 表格标题--%>
         <thead>
@@ -31,7 +30,8 @@
         </thead>
          <%--表格内容--%>
     </table>
-    <%--功能区--%>
+   
+     <%--功能区--%>
     <div id="tb" style="padding: 5px; height: auto">
         <%-- 包括添加管理员，修改、删除管理员 --%>
         <div style="margin-bottom: 5px">
@@ -53,7 +53,7 @@
             <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-search'" onclick="reloadgrid()">Search</a>
         </div>
     </div>
-    </div>
     </form>
+
 </body>
 </html>
