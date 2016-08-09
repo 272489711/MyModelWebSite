@@ -412,6 +412,8 @@
     <Compile Include="App_Code\MD5.cs" />
     <Compile Include="App_Code\MySession.cs" />
     <Compile Include="App_Code\SqlHelper.cs" />
+    <Compile Include="BLL\UserBLL.cs" />
+    <Compile Include="DataModel\User.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -432,6 +434,9 @@
     <Compile Include="Handler\Login.ashx.cs">
       <DependentUpon>Login.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Handler\UsersHandler.ashx.cs">
+      <DependentUpon>UsersHandler.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Handler\VerifyCode.ashx.cs">
       <DependentUpon>VerifyCode.ashx</DependentUpon>
     </Compile>
@@ -450,6 +455,7 @@
     <Content Include="Handler\VerifyCode.ashx" />
     <Content Include="Handler\Login.ashx" />
     <Content Include="Handler\AdminHelper_ResetAdmin.ashx" />
+    <Content Include="Handler\UsersHandler.ashx" />
     <None Include="Properties\PublishProfiles\GeneralModel.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

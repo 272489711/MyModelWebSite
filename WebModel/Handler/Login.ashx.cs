@@ -14,7 +14,7 @@ namespace WebModel.Handler
     /// </summary>
     public class Login : IHttpHandler, System.Web.SessionState.IRequiresSessionState  //要实现session接口
     {
-        private int tickToMinSpan = 600000000; //tick的单位是100毫微秒，1秒=1毫微秒*10^9,tick转换为minute的基数；
+        private DateTime GMT = DateTime.Parse("1970-1-1 00:00:00"); //格林时间；
         public void ProcessRequest(HttpContext context)
         {
             LoginJSData myJson = new LoginJSData();
@@ -81,7 +81,7 @@ namespace WebModel.Handler
                 {
                     if (dt.Rows[0]["LockTime"] != DBNull.Value)
                     {
-                        if (DateTime.Now.Ticks / tickToMinSpan - Convert.ToInt32(dt.Rows[0]["LockTime"]) > 30) //tick的单位是100毫微妙
+                        if ((DateTime.UtcNow- GMT).TotalMinutes - Convert.ToInt32(dt.Rows[0]["LockTime"]) > 30) // 距离上次输入错误大于30分钟 解锁账户
                         {
                             dt.Rows[0].BeginEdit();
                             dt.Rows[0]["IsLock"] = false;
@@ -121,7 +121,7 @@ namespace WebModel.Handler
                 {
                     dt1.Rows[0].BeginEdit();
                     dt1.Rows[0]["IsLock"] = true;
-                    dt1.Rows[0]["LockTime"] = DateTime.Now.Ticks / tickToMinSpan;
+                    dt1.Rows[0]["LockTime"] = (DateTime.UtcNow-GMT).TotalMinutes;
                     dt1.Rows[0].EndEdit();
                     SqlHelper.UpdateTable(dt1, "Users");
                     myJson.State = EnumState.密码错误;

@@ -29,8 +29,6 @@ namespace WebModel
                 da.SelectCommand.Parameters.AddRange(pars);
             DataSet ds = new DataSet();
             da.Fill(ds);
-            if (ds.Tables[0].Rows.Count == 0)
-                return null;
             return ds.Tables[0];
         } 
         #endregion
