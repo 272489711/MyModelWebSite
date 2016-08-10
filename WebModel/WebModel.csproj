@@ -401,7 +401,8 @@
     <Content Include="Scripts\jquery.easyui.min.js" />
     <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\MenuData.js" />
-    <Content Include="UserProfile.aspx" />
+    <Content Include="UserEdit.aspx" />
+    <Content Include="EmployeeEdit.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -412,7 +413,9 @@
     <Compile Include="App_Code\MD5.cs" />
     <Compile Include="App_Code\MySession.cs" />
     <Compile Include="App_Code\SqlHelper.cs" />
+    <Compile Include="BLL\EmployeeBLL.cs" />
     <Compile Include="BLL\UserBLL.cs" />
+    <Compile Include="DataModel\Employees.cs" />
     <Compile Include="DataModel\User.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -431,6 +434,9 @@
     <Compile Include="Handler\AdminHelper_ResetAdmin.ashx.cs">
       <DependentUpon>AdminHelper_ResetAdmin.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Handler\EmployeeHandler.ashx.cs">
+      <DependentUpon>EmployeeHandler.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Handler\Login.ashx.cs">
       <DependentUpon>Login.ashx</DependentUpon>
     </Compile>
@@ -441,12 +447,19 @@
       <DependentUpon>VerifyCode.ashx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserProfile.aspx.cs">
-      <DependentUpon>UserProfile.aspx</DependentUpon>
+    <Compile Include="UserEdit.aspx.cs">
+      <DependentUpon>UserEdit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserProfile.aspx.designer.cs">
-      <DependentUpon>UserProfile.aspx</DependentUpon>
+    <Compile Include="UserEdit.aspx.designer.cs">
+      <DependentUpon>UserEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeEdit.aspx.cs">
+      <DependentUpon>EmployeeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeEdit.aspx.designer.cs">
+      <DependentUpon>EmployeeEdit.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -456,6 +469,7 @@
     <Content Include="Handler\Login.ashx" />
     <Content Include="Handler\AdminHelper_ResetAdmin.ashx" />
     <Content Include="Handler\UsersHandler.ashx" />
+    <Content Include="Handler\EmployeeHandler.ashx" />
     <None Include="Properties\PublishProfiles\GeneralModel.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

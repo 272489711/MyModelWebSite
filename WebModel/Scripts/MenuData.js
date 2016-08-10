@@ -67,13 +67,13 @@
         "subMenuName": "管理-子菜单1",
         "icon": "icon-sys",
         "items": [{
-            "itemName": "管理员设置",
+            "itemName": "用户账号编辑",
             "icon": "icon-nav",
-            "url": "/UserProfile.aspx"
+            "url": "/UserEdit.aspx"
         }, {
-            "itemName": "子菜单1-子项2",
+            "itemName": "职员信息编辑",
             "icon": "icon-nav",
-            "url": ""
+            "url": "/EmployeeEdit.aspx"
         }, {
             "itemName": "子菜单1-子项3",
             "icon": "icon-nav",

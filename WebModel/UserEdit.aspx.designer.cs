@@ -10,7 +10,7 @@
 namespace WebModel {
     
     
-    public partial class UserProfile {
+    public partial class UserEdit {
         
         /// <summary>
         /// form1 控件。

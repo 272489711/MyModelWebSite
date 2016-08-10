@@ -67,6 +67,7 @@ namespace WebModel
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(procName, conn);
                 cmd.CommandType = CommandType.StoredProcedure;
+                if(pars!=null)
                 cmd.Parameters.AddRange(pars);
                 return cmd.ExecuteNonQuery();
             }
@@ -86,6 +87,7 @@ namespace WebModel
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(sql, conn);
+                if(pars!=null)
                 cmd.Parameters.AddRange(pars);
                 return cmd.ExecuteScalar();
             }

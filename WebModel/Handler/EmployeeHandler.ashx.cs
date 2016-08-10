@@ -7,14 +7,14 @@ using System.Web;
 namespace WebModel.Handler
 {
     /// <summary>
-    /// UsersHandler 的摘要说明
+    /// EmployeeHandler 的摘要说明
     /// </summary>
-    public class UsersHandler : IHttpHandler
+    public class EmployeeHandler : IHttpHandler
     {
 
         public void ProcessRequest(HttpContext context)
         {
-            if(context.Request["Query"]!= null)
+            if(context.Request["Query"]!=null)
             {
                 Query(context);
             }
@@ -28,15 +28,15 @@ namespace WebModel.Handler
             }
         }
 
-        public void Query(HttpContext Context)
+        private void Query(HttpContext Context)
         {
             Context.Response.ContentType = "text/plain;charset=UTF-8";
-            string UserName, StartTime, EndTime, DepartmentName;
-            UserName = StartTime = EndTime = DepartmentName = "";
-            //获取查询条件:【用户名,开始时间，结束时间，权限】 
-            if (null != Context.Request.QueryString["UserName"])
+            string EmployeeName, StartTime, EndTime, DepartmentName;
+            EmployeeName = StartTime = EndTime = DepartmentName = "";
+            //获取查询条件:【姓名,入职开始时间，结束时间，部门】 
+            if (null != Context.Request.QueryString["EmployeeName"])
             {
-                UserName = Context.Request.QueryString["UserName"].ToString().Trim();
+                EmployeeName = Context.Request.QueryString["EmployeeName"].ToString().Trim();
             }
             if (null != Context.Request.QueryString["StartTime"])
             {
@@ -76,9 +76,9 @@ namespace WebModel.Handler
             //===================================================================
             //组合查询语句：条件+排序
             StringBuilder strWhere = new StringBuilder();
-            if (UserName != "")
+            if (EmployeeName != "")
             {
-                strWhere.AppendFormat(" UserName like '%{0}%' and ", UserName);
+                strWhere.AppendFormat(" EmployeeName like '%{0}%' and ", EmployeeName);
             }
             if (DepartmentName != "")
             {
@@ -88,8 +88,9 @@ namespace WebModel.Handler
             {
                 try
                 {
-                    strWhere.AppendFormat(" CreateDate >= '{0}' and ", DateTime.Parse(StartTime));
-                }catch(Exception ex)
+                    strWhere.AppendFormat(" JoinTime >= '{0}' and ", DateTime.Parse(StartTime));
+                }
+                catch (Exception ex)
                 {
 
                 }
@@ -98,10 +99,11 @@ namespace WebModel.Handler
             {
                 try
                 {
-                    strWhere.AppendFormat(" CreateDate <= '{0}' and ", DateTime.Parse(EndTime));
-                }catch(Exception ex)
+                    strWhere.AppendFormat(" JoinTime <= '{0}' and ", DateTime.Parse(EndTime));
+                }
+                catch (Exception ex)
                 { }
-              
+
             }
 
             int startindex = strWhere.ToString().LastIndexOf("and");//获取最后一个and的位置
@@ -116,13 +118,10 @@ namespace WebModel.Handler
             //DataSet ds = Bnotice.GetList(strWhere.ToString());  //调用不分页的getlist
 
             //调用分页的GetList方法
-            string strJson = UserBLL.GetJSListByPage(strWhere.ToString(), order, (page - 1) * pageRows + 1, page * pageRows);
+            string strJson = EmployeeBLL.GetJSListByPage(strWhere.ToString(), order, (page - 1) * pageRows + 1, page * pageRows);
             Context.Response.Write(strJson);//返回给前台页面
             Context.Response.End();
 
-
-
         }
-
     }
 }

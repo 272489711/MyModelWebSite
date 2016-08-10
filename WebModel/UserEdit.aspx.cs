@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace WebModel
 {
-    public partial class UserProfile : System.Web.UI.Page
+    public partial class UserEdit : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

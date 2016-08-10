@@ -12,7 +12,7 @@ namespace WebModel
         public static DataTable  GetDTListByPage(string strWhere,string order,int startIndex,int endIndex)
         {
             StringBuilder sqlStr = new StringBuilder();
-            sqlStr.Append("Select * from Users ");
+            sqlStr.Append("Select UserID,UserName,CreateDate,IsLock,LockTime,DepartmentName from Users left join Departments on Users.DepartmentID = Departments.DepartmentID ");
             if(!string.IsNullOrEmpty(strWhere))
             {
                 sqlStr.Append("where " + strWhere);
@@ -42,14 +42,11 @@ namespace WebModel
                 jsonBuilder.Append("{");
                 for (int j = 0; j < dt.Columns.Count; j++)
                 {
-                    if (dt.Columns[j].ColumnName != "UserPass")
-                    {
                         jsonBuilder.Append("\"");
                         jsonBuilder.Append(dt.Columns[j].ColumnName);
                         jsonBuilder.Append("\":\"");
                         jsonBuilder.Append(dt.Rows[i][j].ToString());
                         jsonBuilder.Append("\",");
-                    }
                 }
                 if(dt.Columns.Count>0)
                 {

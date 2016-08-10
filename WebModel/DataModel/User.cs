@@ -10,6 +10,6 @@ namespace WebModel
         public string UserName { get; set; }
         public string UserPass { set; get; }
         public bool IsLock { set; get; }
-        public DateTime CreateTime { get; set; }
+        public DateTime CreateDate { get; set; }
     }
 }
