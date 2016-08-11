@@ -18,6 +18,10 @@ namespace WebModel.Handler
             {
                 Query(context);
             }
+            if(context.Request ["QueryDepartmentName"]=="true")
+            {
+                QueryDepartmentName(context);
+            }
         }
 
         public bool IsReusable
@@ -28,7 +32,12 @@ namespace WebModel.Handler
             }
         }
 
-        public void Query(HttpContext Context)
+        private void QueryDepartmentName(HttpContext Context)
+        {
+            Context.Response.ContentType = "text/plain;charset=UTF-8";
+            Context.Response.Write( DepartmentBLL.GetJSListByPage("", ""));
+        }
+        private void Query(HttpContext Context)
         {
             Context.Response.ContentType = "text/plain;charset=UTF-8";
             string UserName, StartTime, EndTime, DepartmentName;

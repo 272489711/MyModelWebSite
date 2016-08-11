@@ -83,6 +83,8 @@
     <Content Include="Content\easyui_theme\black\images\messager_icons.png" />
     <Content Include="Content\easyui_theme\black\images\pagination_icons.png" />
     <Content Include="Content\easyui_theme\black\images\panel_tools.png" />
+    <Content Include="Content\easyui_theme\black\images\passwordbox_close.png" />
+    <Content Include="Content\easyui_theme\black\images\passwordbox_open.png" />
     <Content Include="Content\easyui_theme\black\images\searchbox_button.png" />
     <Content Include="Content\easyui_theme\black\images\slider_handle.png" />
     <Content Include="Content\easyui_theme\black\images\spinner_arrows.png" />
@@ -97,6 +99,7 @@
     <Content Include="Content\easyui_theme\black\numberbox.css" />
     <Content Include="Content\easyui_theme\black\pagination.css" />
     <Content Include="Content\easyui_theme\black\panel.css" />
+    <Content Include="Content\easyui_theme\black\passwordbox.css" />
     <Content Include="Content\easyui_theme\black\progressbar.css" />
     <Content Include="Content\easyui_theme\black\propertygrid.css" />
     <Content Include="Content\easyui_theme\black\searchbox.css" />
@@ -133,6 +136,8 @@
     <Content Include="Content\easyui_theme\bootstrap\images\messager_icons.png" />
     <Content Include="Content\easyui_theme\bootstrap\images\pagination_icons.png" />
     <Content Include="Content\easyui_theme\bootstrap\images\panel_tools.png" />
+    <Content Include="Content\easyui_theme\bootstrap\images\passwordbox_close.png" />
+    <Content Include="Content\easyui_theme\bootstrap\images\passwordbox_open.png" />
     <Content Include="Content\easyui_theme\bootstrap\images\searchbox_button.png" />
     <Content Include="Content\easyui_theme\bootstrap\images\slider_handle.png" />
     <Content Include="Content\easyui_theme\bootstrap\images\spinner_arrows.png" />
@@ -147,6 +152,7 @@
     <Content Include="Content\easyui_theme\bootstrap\numberbox.css" />
     <Content Include="Content\easyui_theme\bootstrap\pagination.css" />
     <Content Include="Content\easyui_theme\bootstrap\panel.css" />
+    <Content Include="Content\easyui_theme\bootstrap\passwordbox.css" />
     <Content Include="Content\easyui_theme\bootstrap\progressbar.css" />
     <Content Include="Content\easyui_theme\bootstrap\propertygrid.css" />
     <Content Include="Content\easyui_theme\bootstrap\searchbox.css" />
@@ -184,6 +190,8 @@
     <Content Include="Content\easyui_theme\default\images\messager_icons.png" />
     <Content Include="Content\easyui_theme\default\images\pagination_icons.png" />
     <Content Include="Content\easyui_theme\default\images\panel_tools.png" />
+    <Content Include="Content\easyui_theme\default\images\passwordbox_close.png" />
+    <Content Include="Content\easyui_theme\default\images\passwordbox_open.png" />
     <Content Include="Content\easyui_theme\default\images\searchbox_button.png" />
     <Content Include="Content\easyui_theme\default\images\slider_handle.png" />
     <Content Include="Content\easyui_theme\default\images\spinner_arrows.png" />
@@ -198,6 +206,7 @@
     <Content Include="Content\easyui_theme\default\numberbox.css" />
     <Content Include="Content\easyui_theme\default\pagination.css" />
     <Content Include="Content\easyui_theme\default\panel.css" />
+    <Content Include="Content\easyui_theme\default\passwordbox.css" />
     <Content Include="Content\easyui_theme\default\progressbar.css" />
     <Content Include="Content\easyui_theme\default\propertygrid.css" />
     <Content Include="Content\easyui_theme\default\searchbox.css" />
@@ -234,6 +243,8 @@
     <Content Include="Content\easyui_theme\gray\images\messager_icons.png" />
     <Content Include="Content\easyui_theme\gray\images\pagination_icons.png" />
     <Content Include="Content\easyui_theme\gray\images\panel_tools.png" />
+    <Content Include="Content\easyui_theme\gray\images\passwordbox_close.png" />
+    <Content Include="Content\easyui_theme\gray\images\passwordbox_open.png" />
     <Content Include="Content\easyui_theme\gray\images\searchbox_button.png" />
     <Content Include="Content\easyui_theme\gray\images\slider_handle.png" />
     <Content Include="Content\easyui_theme\gray\images\spinner_arrows.png" />
@@ -248,6 +259,7 @@
     <Content Include="Content\easyui_theme\gray\numberbox.css" />
     <Content Include="Content\easyui_theme\gray\pagination.css" />
     <Content Include="Content\easyui_theme\gray\panel.css" />
+    <Content Include="Content\easyui_theme\gray\passwordbox.css" />
     <Content Include="Content\easyui_theme\gray\progressbar.css" />
     <Content Include="Content\easyui_theme\gray\propertygrid.css" />
     <Content Include="Content\easyui_theme\gray\searchbox.css" />
@@ -316,6 +328,8 @@
     <Content Include="Content\easyui_theme\material\images\messager_icons.png" />
     <Content Include="Content\easyui_theme\material\images\pagination_icons.png" />
     <Content Include="Content\easyui_theme\material\images\panel_tools.png" />
+    <Content Include="Content\easyui_theme\material\images\passwordbox_close.png" />
+    <Content Include="Content\easyui_theme\material\images\passwordbox_open.png" />
     <Content Include="Content\easyui_theme\material\images\searchbox_button.png" />
     <Content Include="Content\easyui_theme\material\images\slider_handle.png" />
     <Content Include="Content\easyui_theme\material\images\spinner_arrows.png" />
@@ -330,6 +344,7 @@
     <Content Include="Content\easyui_theme\material\numberbox.css" />
     <Content Include="Content\easyui_theme\material\pagination.css" />
     <Content Include="Content\easyui_theme\material\panel.css" />
+    <Content Include="Content\easyui_theme\material\passwordbox.css" />
     <Content Include="Content\easyui_theme\material\progressbar.css" />
     <Content Include="Content\easyui_theme\material\propertygrid.css" />
     <Content Include="Content\easyui_theme\material\searchbox.css" />
@@ -366,6 +381,8 @@
     <Content Include="Content\easyui_theme\metro\images\messager_icons.png" />
     <Content Include="Content\easyui_theme\metro\images\pagination_icons.png" />
     <Content Include="Content\easyui_theme\metro\images\panel_tools.png" />
+    <Content Include="Content\easyui_theme\metro\images\passwordbox_close.png" />
+    <Content Include="Content\easyui_theme\metro\images\passwordbox_open.png" />
     <Content Include="Content\easyui_theme\metro\images\searchbox_button.png" />
     <Content Include="Content\easyui_theme\metro\images\slider_handle.png" />
     <Content Include="Content\easyui_theme\metro\images\spinner_arrows.png" />
@@ -380,6 +397,7 @@
     <Content Include="Content\easyui_theme\metro\numberbox.css" />
     <Content Include="Content\easyui_theme\metro\pagination.css" />
     <Content Include="Content\easyui_theme\metro\panel.css" />
+    <Content Include="Content\easyui_theme\metro\passwordbox.css" />
     <Content Include="Content\easyui_theme\metro\progressbar.css" />
     <Content Include="Content\easyui_theme\metro\propertygrid.css" />
     <Content Include="Content\easyui_theme\metro\searchbox.css" />
@@ -395,14 +413,15 @@
     <Content Include="Content\easyui_theme\metro\window.css" />
     <Content Include="Content\easyui_theme\mobile.css" />
     <Content Include="Default.aspx" />
+    <Content Include="EmployeeEdit.aspx" />
     <Content Include="Images\logo.png" />
     <Content Include="Scripts\DateTimeJS.js" />
     <Content Include="Scripts\DefaultJS.js" />
+    <Content Include="Scripts\easyui-lang-zh_CN.js" />
     <Content Include="Scripts\jquery.easyui.min.js" />
     <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\MenuData.js" />
     <Content Include="UserEdit.aspx" />
-    <Content Include="EmployeeEdit.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -413,6 +432,7 @@
     <Compile Include="App_Code\MD5.cs" />
     <Compile Include="App_Code\MySession.cs" />
     <Compile Include="App_Code\SqlHelper.cs" />
+    <Compile Include="BLL\DepartmentBLL.cs" />
     <Compile Include="BLL\EmployeeBLL.cs" />
     <Compile Include="BLL\UserBLL.cs" />
     <Compile Include="DataModel\Employees.cs" />
@@ -430,6 +450,13 @@
     </Compile>
     <Compile Include="DefaultMaster.Master.designer.cs">
       <DependentUpon>DefaultMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeEdit.aspx.cs">
+      <DependentUpon>EmployeeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeEdit.aspx.designer.cs">
+      <DependentUpon>EmployeeEdit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Handler\AdminHelper_ResetAdmin.ashx.cs">
       <DependentUpon>AdminHelper_ResetAdmin.ashx</DependentUpon>
@@ -454,22 +481,15 @@
     <Compile Include="UserEdit.aspx.designer.cs">
       <DependentUpon>UserEdit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeEdit.aspx.cs">
-      <DependentUpon>EmployeeEdit.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EmployeeEdit.aspx.designer.cs">
-      <DependentUpon>EmployeeEdit.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="DefaultMaster.Master" />
-    <Content Include="Content\easyui_theme\material\images\Thumbs.db" />
     <Content Include="Handler\VerifyCode.ashx" />
     <Content Include="Handler\Login.ashx" />
     <Content Include="Handler\AdminHelper_ResetAdmin.ashx" />
     <Content Include="Handler\UsersHandler.ashx" />
     <Content Include="Handler\EmployeeHandler.ashx" />
+    <Content Include="Content\easyui_theme\material\images\Thumbs.db" />
     <None Include="Properties\PublishProfiles\GeneralModel.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

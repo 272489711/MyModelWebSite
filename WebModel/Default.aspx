@@ -52,7 +52,7 @@
 
         <%-- 底部脚注 --%>
         <div region="south" split="true"  class="bottom-foot" scroll="no">
-            <div class ="footer-bottom"><a href="javasctipt:void(0)">关于</a><a href="javascript:void(0)">联系我们</a><span style="font-family:SansSerif">©</span>2002-2016<a href="javascript:void(0)">LYH</a>保留所有权利<a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备XXXXXXX号</a></div>
+            <div class ="footer-bottom"><a href="javascript:void(0)">关于</a><a href="javascript:void(0)">联系我们</a><span style="font-family:SansSerif">©</span>2002-2016<a href="javascript:void(0)">LYH</a>保留所有权利<a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备XXXXXXX号</a></div>
         </div>
     </div>
    
